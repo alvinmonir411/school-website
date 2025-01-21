@@ -184,7 +184,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: 20vh;
+  height: 15vh;
 }
 
 .circle-button {
@@ -202,5 +202,106 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+/* our_stories */
+.our_stories {
+  height: 90vh;
+  position: relative;
+  background: url("assets/bg.png") center top / cover no-repeat;
+  /* Sets the image as the background */
+}
+
+.our_stories::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(250, 228, 185) 40%,
+    rgba(255, 255, 255, 1)
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+.our_stories > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.our_stories img {
+  border-radius: 10px;
+}
+.cards-conteiner {
+  padding-top: 5rem;
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+}
+.our_img {
+  padding-bottom: 3rem;
+  background-color: white;
+  border-radius: 14px;
+}
+.Our-school-img_text {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.Our-school-img_text_p {
+  padding: 20px;
+  font-size: 0.96rem;
+}
+
+.our-img-conteiner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.our_story_img {
+  padding-bottom: 2rem;
+  background-color: white;
+  border-radius: 14px;
+}
+.our-img-conteiner h3 {
+  font-size: 1rem;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.our_story_img > a {
+  position: absolute;
+  border: 1px solid seagreen;
+  background-color: seagreen;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  top: 33%;
+}
+.our_img a {
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-color: orange;
+  border-radius: 20px;
+  top: -40%;
+  left: 0;
+  border: 1px solid orange;
+}
+@media screen and (max-width: 570px) {
+  .our_stories {
+    height: auto;
+  }
+  .our_img {
+    display: none;
+  }
+  .our-img-conteiner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-img-conteiner a {
+    top: 21%;
   }
 }
