@@ -291,6 +291,18 @@ main {
   left: 0;
   border: 1px solid orange;
 }
+.our_stories-btn {
+  margin-top: 3.1rem;
+  margin-bottom: 1rem;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-left: 45%;
+}
+
 @media screen and (max-width: 570px) {
   .our_stories {
     height: auto;
@@ -302,6 +314,107 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
   .our-img-conteiner a {
-    top: 21%;
+    top: 19%;
+  }
+  .our_stories-btn {
+    margin-left: 70px;
+  }
+}
+/* Footer Styling */
+.footer {
+  background-color: #1e90ff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 40px 20px;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-social {
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 250px;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social .social-icons a {
+  background-color: #ff9800; /* Orange background */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-social .social-icons a:hover {
+  background-color: #ff5722;
+}
+
+.footer-social .social-icons i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;
   }
 }
